@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  font-family: "HK Grotesk Light";
+  src: url("../fonts/HKGrotesk-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "HK Grotesk Regular";
+  src: url("../fonts/HKGrotesk-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "HK Grotesk ExtraBold";
+  src: url("../fonts/HKGrotesk-ExtraBold.woff2") format("woff2");
+}
+
+
+body {
+    font-family: "HK Grotesk Light";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+a {
+    color: #333;
+    font-size: 14px;
+}
+a:hover, a:active {
+    color: #00BA74;
+}
+
+.btn {
+    border-radius: 2px;
+}
+.btn-dark-blue {
+    background-color: #030F3F !important;
+    color: #fff !important;
+    border: 1px solid #2B83EA !important;
+}
+.btn-white {
+    background-color: #fff !important;
+    color: #528FF0 !important;
+    border: 1px solid #EDEDED !important;
+}
+.btn-primary {
+    background-color: #2783F3 !important;
+    color: #fff !important;
+}
+.text-light {
+    color: #939C9F !important;
+}
+.text-green {
+    color: #00BA74 !important;
+}
+
+.trevapay {
+    background: #B1FBE3;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 2px 8px;
+}
+
+header .navbar {
+    background-color: #03062F;
+    font-family: "HK Grotesk Regular";
+    font-size: 15px;
+    line-height: 24px;
+}
+header .navbar .navbar-nav .nav-item {
+    padding: 0 8px;
+}
+
+.banner {
+    position: relative;
+    background-color: #03062F;
+    clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 80%, 0 0);
+    padding: 35px 0 115px;
+    z-index: 1;
+}
+.banner h2 {
+    font-family: "HK Grotesk ExtraBold";
+    position: relative;
+    margin: 0 0 30px;
+    padding: 0 0 30px;
+    font-size: 40px;
+}
+.banner h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 24px;
+    height: 4px;
+    background-color: #58C19C;
+}
+.banner p {
+    margin: 0 0 30px;
+}
+
+.product-detail-wrapper {
+    padding: 100px 0;
+}
+.product-detail-wrapper .container {
+    position: relative;
+}
+.product-detail-wrapper .container:before {
+    content: "";
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    background-image: url(../images/bg-dot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.product-slider .slick-prev:before,
+.product-slider .slick-next:before {
+    display: none;
+}
+.product-slider .slick-prev {
+    left: 0;
+}
+.product-slider .slick-next {
+    right: 0;
+}
+.product-slider .slick-arrow {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #F4F6F6;
+    z-index: 1;
+}
+.product-slider .slider-for img {
+    margin: auto;
+}
+.product-slider .slider-nav .slider-thumbnail {
+    padding: 4px;
+}
+.product-slider .slider-nav .slider-thumbnail img {
+    border-radius: 4px;
+}
+.product-slider .slider-nav .slider-thumbnail.slick-current img {
+    border: 1px solid #000;
+}
+
+.product-detail-wrapper h2 {
+    font-family: "HK Grotesk ExtraBold";
+}
+.product-detail-wrapper .rating-star .fas {
+    color: #FFD200;
+}
+.product-detail-wrapper .color-select .color-list {
+    position: relative;
+    height: 100%;
+    border: 1px solid #D8E0E2;
+    border-radius: 6px;
+    text-align: center;
+    overflow: hidden;
+}
+.product-detail-wrapper .color-select .color-list.active {
+    border: 2px solid #202324;
+}
+.product-detail-wrapper .color-select .color-list span {
+    display: block;
+    font-size: 10px;
+    color: #fff;
+}
+.product-detail-wrapper .color-select .color-list span.new-color {
+  background: #DE742D;
+}
+.product-detail-wrapper .color-select .color-list span.limited-release {
+    background: #A07EDC;
+}
+.product-detail-wrapper .color-select .color-list p {
+    margin: 0;
+    padding: 8px;
+    font-size: 13px;
+    line-height: 16px;
+}
+.product-detail-wrapper .quantity {
+    display: inline-block;
+}
+
+.product-detail-wrapper .quantity .input-text.qty {
+    width: 40px;
+    height: 48px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
+.product-detail-wrapper .quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.product-detail-wrapper .quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+}
+
+.product-detail-wrapper .quantity.buttons_added .minus,
+.product-detail-wrapper .quantity.buttons_added .plus {
+    padding: 7px 10px 8px;
+    width: 40px;
+    height: 48px;
+    background-color: #EDF1F2;
+    border: 1px solid #efefef;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.product-detail-wrapper .quantity.buttons_added .minus:hover,
+.product-detail-wrapper .quantity.buttons_added .plus:hover {
+    background: #eeeeee;
+}
+
+.product-detail-wrapper .quantity input::-webkit-outer-spin-button,
+.product-detail-wrapper .quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+ 
+.product-detail-wrapper .quantity.buttons_added .minus:focus,
+.product-detail-wrapper .quantity.buttons_added .plus:focus {
+    outline: none;
+}
+.product-detail-wrapper .select-package .custom-control.custom-radio .custom-control-label::before {
+    background-color: transparent;
+    border: 2px solid #E5E5E5;
+}
+.product-detail-wrapper .select-package .custom-control.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: transparent;
+    border: 2px solid #00ba74;
+}
+.product-detail-wrapper .select-package .custom-control.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-image: none;
+    background-color: #00ba74;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    top: 8px;
+    left: 4px;
+}
+.product-detail-wrapper .select-package .custom-control.custom-radio .custom-control-label > span {
+    font-size: 13px;
+    line-height: 20px;
+}
+.product-detail-wrapper .btn-add-to-bag {
+    display: block;
+    background-color: #00BA74;
+    color: #fff;
+    width: 100%;
+    padding: 23px 8px;
+    font-size: 18px;
+    line-height: 24px;
+}
+.product-detail-wrapper .product-list-info ul {
+    padding-left: 30px;
+}
+.product-detail-wrapper .product-list-info ul li {
+    position: relative;
+    list-style-image: url('../images/list-icon.png');
+    padding: 4px 0;
+}
